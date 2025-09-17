@@ -31,7 +31,7 @@ const AddProjectPage = () => {
     dataToSend.append('image', imageFile);
 
     try {
-      const response = await fetch('http://localhost:5000/api/projects', {
+      const response = await fetch('https://react-portfolio-2-k3sq.onrender.com/api/projects', {
         method: 'POST',
         body: dataToSend,
       });
