@@ -1,0 +1,36 @@
+.projects-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 80px - 100px);
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+.projects-container {
+  max-width: 1200px;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Style for the 'no projects' message */
+.no-projects {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  width: 100%;
+  margin-top: 50px;
+}

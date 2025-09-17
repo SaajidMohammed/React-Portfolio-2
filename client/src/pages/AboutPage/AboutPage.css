@@ -1,0 +1,64 @@
+.about-page {
+  padding: 40px 20px;
+  min-height: calc(100vh - 80px - 100px); /* Full height minus Navbar and Footer */
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+.about-content {
+  max-width: 900px;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.about-section {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-badge {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

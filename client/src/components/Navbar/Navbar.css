@@ -1,0 +1,122 @@
+/* Navbar container */
+.navbar {
+  background: var(--background-color);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Logo/Brand */
+.navbar-logo {
+  color: var(--text-color);
+  justify-self: start;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* New style for the logo image */
+.navbar-logo img {
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+/* Menu items */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: var(--primary-color);
+}
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* Hamburger icon for mobile */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* --- Responsive Design for Mobile --- */
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px); /* Full height of the viewport minus navbar height */
+    position: absolute;
+    top: 80px;
+    left: -100%; /* Initially hidden off-screen */
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: var(--background-color);
+  }
+
+  .nav-menu.active {
+    left: 0; /* Slide in from the left */
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .nav-item {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .menu-icon {
+    display: block; /* Show hamburger icon on small screens */
+  }
+}

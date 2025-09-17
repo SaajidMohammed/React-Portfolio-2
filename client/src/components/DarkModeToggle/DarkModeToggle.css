@@ -1,0 +1,19 @@
+.toggle-button {
+  background: var(--toggle-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-button:hover {
+  transform: scale(1.1);
+}
